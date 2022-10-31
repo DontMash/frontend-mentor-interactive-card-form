@@ -24,7 +24,7 @@ npm run build && npm run preview
 
 ## Demonstration
 
-[Live](mentor-interactive-card-information.netlify.app)
+[Live](https://mentor-interactive-card-information.netlify.app)
 
 ## Authors
 
