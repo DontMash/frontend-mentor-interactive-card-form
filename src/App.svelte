@@ -33,6 +33,7 @@
 
   <main class="md:m-auto">
     <section class="max-w-sm md:max-w-none md:w-96 px-6 md:px-10 py-8 mt-16 mx-auto">
+      <h1 class="sr-only">Your credit card information</h1>
       {#if !done}
         <div in:fade={{ duration: 500, delay: 300 }}>
           <form
@@ -48,6 +49,7 @@
               </span>
               <input
                 class="peer block w-full px-3 py-2.5 border border-light-grayish-violet rounded-lg text-very-dark-violet leading-none font-medium placeholder:text-light-grayish-violet focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-very-dark-violet empty-invalid:border-red"
+                id="holder"
                 name="holder"
                 type="text"
                 placeholder="e.g. Jane Appleseed"
@@ -69,6 +71,7 @@
               </span>
               <input
                 class="peer block w-full px-3 py-2.5 border border-light-grayish-violet rounded-lg text-very-dark-violet leading-none font-medium placeholder:text-light-grayish-violet focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-very-dark-violet empty-invalid:border-red"
+                id="number"
                 name="number"
                 type="text"
                 placeholder="e.g. 1234 5678 9123 0000"
@@ -93,6 +96,7 @@
                   <label class="sr-only" for="exp-month">Month of expiration</label>
                   <input
                     class="peer block w-full px-3 py-2.5 border border-light-grayish-violet rounded-lg text-very-dark-violet leading-none font-medium placeholder:text-light-grayish-violet focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-very-dark-violet empty-invalid:border-red"
+                    id="exp-month"
                     name="exp-month"
                     type="text"
                     inputmode="numeric"
@@ -104,7 +108,8 @@
                   <label class="sr-only" for="exp-year">Year of expiration</label>
                   <input
                     class="peer block w-full px-3 py-2.5 border border-light-grayish-violet rounded-lg text-very-dark-violet leading-none font-medium placeholder:text-light-grayish-violet focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-very-dark-violet empty-invalid:border-red"
-                    name="exp-month"
+                    id="exp-year"
+                    name="exp-year"
                     type="text"
                     inputmode="numeric"
                     placeholder="YY"
@@ -127,6 +132,7 @@
                 </span>
                 <input
                   class="peer block w-full px-3 py-2.5 border border-light-grayish-violet rounded-lg text-very-dark-violet leading-none font-medium placeholder:text-light-grayish-violet focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-very-dark-violet empty-invalid:border-red"
+                  id="cvc"
                   name="cvc"
                   type="text"
                   inputmode="numeric"
